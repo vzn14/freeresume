@@ -4,8 +4,8 @@
 NODE_ENV=production
 PORT=3000
 DATABASE_URL=postgresql://freeresumebuilder:WTqQZPnXgjPzXT1OgxnTNZQQX0j0MSG4@dpg-d34kj895pdvs73e1e0e0-a/freeresumebuilder_db
-PUBLIC_URL=https://freeresumebuilder.co
-STORAGE_URL=https://freeresumebuilder-backend.onrender.com/storage
+PUBLIC_URL=https://freeresumebuilder-backend.onrender.com
+STORAGE_URL=https://freeresumebuilder-backend.onrender.com/api/storage
 ACCESS_TOKEN_SECRET=(R>^gcrkj@!^bn[d>XF7&i5?8xS+Ka{V
 REFRESH_TOKEN_SECRET=@%dh&VNCZiyzV*0YGjb4_$At9(ent&*w
 MAIL_FROM=noreply@freeresumebuilder.co

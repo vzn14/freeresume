@@ -23,7 +23,7 @@
     "prestart": "pnpm prisma:migrate",
     "start": "node dist/apps/server/main",
     "start:client": "npx serve -s dist/apps/client -l 3000",
-    "start:server": "node dist/apps/server/main",
+    "start:server": "cd dist/apps/server && node main.js",
     "lint": "nx run-many -t lint",
     "lint:fix": "nx run-many -t lint --fix",
     "format": "pnpm exec prettier -c --log-level error .",
