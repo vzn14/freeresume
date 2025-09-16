@@ -1,0 +1,23 @@
+# Backend Environment Variables for Render Dashboard
+# Copy-paste these one by one in Render dashboard
+
+NODE_ENV=production
+PORT=3000
+DATABASE_URL=postgresql://freeresumebuilder:WTqQZPnXgjPzXT1OgxnTNZQQX0j0MSG4@dpg-d34kj895pdvs73e1e0e0-a/freeresumebuilder_db
+PUBLIC_URL=https://freeresumebuilder.co
+STORAGE_URL=https://freeresumebuilder-backend.onrender.com/storage
+ACCESS_TOKEN_SECRET=(R>^gcrkj@!^bn[d>XF7&i5?8xS+Ka{V
+REFRESH_TOKEN_SECRET=@%dh&VNCZiyzV*0YGjb4_$At9(ent&*w
+MAIL_FROM=noreply@freeresumebuilder.co
+STORAGE_ENDPOINT=localhost
+STORAGE_PORT=9000
+STORAGE_REGION=us-east-1
+STORAGE_BUCKET=default
+STORAGE_ACCESS_KEY=minioadmin
+STORAGE_SECRET_KEY=minioadmin
+STORAGE_USE_SSL=false
+STORAGE_SKIP_BUCKET_CHECK=true
+DISABLE_SIGNUPS=true
+DISABLE_EMAIL_AUTH=true
+CHROME_TOKEN=chrome_token
+CHROME_URL=ws://localhost:3000
