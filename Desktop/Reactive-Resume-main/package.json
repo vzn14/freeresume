@@ -18,7 +18,7 @@
     "test": "pnpm vitest run",
     "prebuild": "pnpm prisma:generate",
     "build": "nx run-many -t build",
-    "build:client": "nx build client",
+    "build:client": "nx build client --configuration=production",
     "build:server": "nx build server",
     "prestart": "pnpm prisma:migrate",
     "start": "node dist/apps/server/main",

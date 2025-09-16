@@ -12,7 +12,10 @@ import { toast } from "../hooks/use-toast";
 import { translateError } from "../services/errors/translate-error";
 import { queryClient } from "./query-client";
 
-export const axios = _axios.create({ baseURL: "/api", withCredentials: true });
+export const axios = _axios.create({ 
+  baseURL: import.meta.env.VITE_SERVER_URL ? `${import.meta.env.VITE_SERVER_URL}/api` : "/api", 
+  withCredentials: true 
+});
 
 // Intercept responses to transform ISO dates to JS date objects
 axios.interceptors.response.use(
@@ -38,7 +41,10 @@ axios.interceptors.response.use(
 
 // Create another instance to handle failed refresh tokens
 // Reference: https://github.com/Flyrell/axios-auth-refresh/issues/191
-const axiosForRefresh = _axios.create({ baseURL: "/api", withCredentials: true });
+const axiosForRefresh = _axios.create({ 
+  baseURL: import.meta.env.VITE_SERVER_URL ? `${import.meta.env.VITE_SERVER_URL}/api` : "/api", 
+  withCredentials: true 
+});
 
 // Interceptor to handle expired access token errors
 const handleAuthError = () => refreshToken(axiosForRefresh);

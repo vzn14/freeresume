@@ -1,0 +1,5 @@
+# Frontend Environment Variables for Render Dashboard
+# Copy-paste these in Frontend Static Site service
+
+NODE_ENV=production
+VITE_SERVER_URL=https://freeresumebuilder-backend.onrender.com
